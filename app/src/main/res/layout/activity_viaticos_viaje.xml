@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFBFC"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="22dp"
+            android:background="@drawable/green_title_background"
+            android:elevation="8dp"
+            android:gravity="center"
+            android:paddingVertical="16dp"
+            android:text="💰 Viáticos de Viaje"
+            android:textColor="#2C3E50"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.02" />
+
+        <TextView
+            android:id="@+id/textViewSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/purple_button_background"
+            android:elevation="6dp"
+            android:gravity="center"
+            android:paddingVertical="14dp"
+            android:text="💸 Saldos disponibles por categoría"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.01" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <ImageView
+                android:id="@+id/imageHotel"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/hotel" />
+
+            <TextView
+                android:id="@+id/textMonto1"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="1"
+                android:background="@drawable/gray_id_background"
+                android:elevation="6dp"
+                android:gravity="center"
+                android:paddingVertical="14dp"
+                android:text="$ 0"
+                android:textColor="#2C3E50"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.02" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <ImageView
+                android:id="@+id/imageComida"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/comida" />
+
+            <TextView
+                android:id="@+id/textMonto2"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="1"
+                android:background="@drawable/gray_id_background"
+                android:elevation="6dp"
+                android:gravity="center"
+                android:paddingVertical="14dp"
+                android:text="$ 0"
+                android:textColor="#2C3E50"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.02" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <ImageView
+                android:id="@+id/imageTransporte"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/transporte" />
+
+            <TextView
+                android:id="@+id/textMonto3"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="1"
+                android:background="@drawable/gray_id_background"
+                android:elevation="6dp"
+                android:gravity="center"
+                android:paddingVertical="14dp"
+                android:text="$ 0"
+                android:textColor="#2C3E50"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.02" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <ImageView
+                android:id="@+id/imageGasolina"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/gasolina" />
+
+            <TextView
+                android:id="@+id/textMonto4"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="1"
+                android:background="@drawable/gray_id_background"
+                android:elevation="6dp"
+                android:gravity="center"
+                android:paddingVertical="14dp"
+                android:text="$ 0"
+                android:textColor="#2C3E50"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.02" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/buttonSubirFacturas"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/blue_button_background"
+            android:clickable="true"
+            android:elevation="8dp"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="📄 Subir Facturas"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.02" />
+
+        <TextView
+            android:id="@+id/buttonConsultarEstatus"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginBottom="26dp"
+            android:background="@drawable/green_button_background"
+            android:clickable="true"
+            android:elevation="8dp"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="📊 Consultar Estatus"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.02" />
+
+        <TextView
+            android:id="@+id/buttonRegresarMenu"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/purple_button_background"
+            android:clickable="true"
+            android:elevation="6dp"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="🔙 Regresar al menú"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.02" />
+
+    </LinearLayout>
+
+</ScrollView>
