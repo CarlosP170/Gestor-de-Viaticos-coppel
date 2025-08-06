@@ -1,0 +1,21 @@
+# Archivos de Android Studio
+*.iml
+.gradle
+/local.properties
+/.idea/
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Archivos grandes
+*.apk
+*.aab
+*.zip
+*.rar
+*.7z
+
+# Logs
+*.log

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFBFC"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_marginBottom="26dp"
+            android:background="@drawable/green_button_background"
+            android:elevation="8dp"
+            android:text="👥 Solicitud de viáticos para colaborador"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingVertical="16dp"
+            android:letterSpacing="0.02" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/gray_id_background"
+            android:elevation="4dp"
+            android:lineSpacingExtra="6dp"
+            android:text="👤 Ingresa el número de empleado del colaborador"
+            android:textColor="#2C3E50"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:gravity="center"
+            android:letterSpacing="0.01" />
+
+        <EditText
+            android:id="@+id/editTextNumeroEmpleado"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginBottom="26dp"
+            android:background="@drawable/white_rounded_input"
+            android:elevation="6dp"
+            android:gravity="center"
+            android:hint="Número de empleado"
+            android:inputType="text"
+            android:textColor="#2C3E50"
+            android:textColorHint="#7F8C8D"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:paddingHorizontal="20dp"
+            android:letterSpacing="0.02" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/gray_id_background"
+            android:elevation="4dp"
+            android:lineSpacingExtra="6dp"
+            android:text="📋 Ingresa el folio del viaje y la cantidad solicitada para cada categoría"
+            android:textColor="#2C3E50"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:gravity="center"
+            android:letterSpacing="0.01" />
+
+        <EditText
+            android:id="@+id/editTextFolioViaje"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginBottom="26dp"
+            android:background="@drawable/white_rounded_input"
+            android:elevation="6dp"
+            android:gravity="center"
+            android:hint="Folio del viaje"
+            android:inputType="text"
+            android:textColor="#2C3E50"
+            android:textColorHint="#7F8C8D"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:paddingHorizontal="20dp"
+            android:letterSpacing="0.02" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <ImageView
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="24dp"
+                android:src="@drawable/hotel" />
+
+            <EditText
+                android:id="@+id/editTextMontoHotel"
+                android:layout_width="0dp"
+                android:layout_height="54dp"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/white_rounded_input"
+                android:elevation="6dp"
+                android:gravity="center"
+                android:hint="$ 0"
+                android:inputType="numberDecimal"
+                android:textColor="#2C3E50"
+                android:textColorHint="#7F8C8D"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.02" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <ImageView
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="24dp"
+                android:src="@drawable/comida" />
+
+            <EditText
+                android:id="@+id/editTextMontoComida"
+                android:layout_width="0dp"
+                android:layout_height="54dp"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/white_rounded_input"
+                android:elevation="6dp"
+                android:gravity="center"
+                android:hint="$ 0"
+                android:inputType="numberDecimal"
+                android:textColor="#2C3E50"
+                android:textColorHint="#7F8C8D"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.02" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <ImageView
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="24dp"
+                android:src="@drawable/transporte" />
+
+            <EditText
+                android:id="@+id/editTextMontoTransporte"
+                android:layout_width="0dp"
+                android:layout_height="54dp"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/white_rounded_input"
+                android:elevation="6dp"
+                android:gravity="center"
+                android:hint="$ 0"
+                android:inputType="numberDecimal"
+                android:textColor="#2C3E50"
+                android:textColorHint="#7F8C8D"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.02" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <ImageView
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="24dp"
+                android:src="@drawable/gasolina" />
+
+            <EditText
+                android:id="@+id/editTextMontoGasolina"
+                android:layout_width="0dp"
+                android:layout_height="54dp"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/white_rounded_input"
+                android:elevation="6dp"
+                android:gravity="center"
+                android:hint="$ 0"
+                android:inputType="numberDecimal"
+                android:textColor="#2C3E50"
+                android:textColorHint="#7F8C8D"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.02" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/buttonEnviarSolicitud"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/green_rounded_background"
+            android:clickable="true"
+            android:elevation="8dp"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="📤 Enviar Solicitud"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.02" />
+
+        <TextView
+            android:id="@+id/buttonRegresarMenu"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/purple_button_background"
+            android:elevation="6dp"
+            android:text="🔙 Regresar al menú principal"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:letterSpacing="0.02" />
+
+    </LinearLayout>
+
+</ScrollView>
